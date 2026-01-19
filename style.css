@@ -1,0 +1,190 @@
+/* ========================================
+   HEADER STYLES
+   ======================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.header-logo {
+    max-width: 150px;
+    height: auto;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    margin-top: -20px;
+    margin-right: 20px;
+}
+
+.header-logo:hover {
+    opacity: 0.8;
+}
+
+/* ========================================
+   FILMS CONTAINER
+   ======================================== */
+
+.films-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* ========================================
+   FILM CARD CONTAINER
+   ======================================== */
+
+.film-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ========================================
+   FILM SECTION STYLES
+   ======================================== */
+
+#film1 {
+    text-align: left;
+    width: fit-content;
+}
+
+#film1 a {
+    text-decoration: none;
+    display: block;
+}
+
+#film1 img {
+    max-width: 300px;
+    height: auto;
+    border: 2px solid #000;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#film1 a:hover img {
+    opacity: 0.8;
+}
+
+#film2 {
+    text-align: left;
+    width: fit-content;
+}
+
+#film2 a {
+    text-decoration: none;
+    display: block;
+}
+
+#film2 img {
+    max-width: 300px;
+    height: auto;
+    border: 2px solid #000;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#film2 a:hover img {
+    opacity: 0.8;
+}
+
+/* ========================================
+   CONTAINER STYLES
+   ======================================== */
+
+.container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 265px;
+    height: 125px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+.container h3 {
+    margin: 0 0 10px 0;
+}
+
+/* ========================================
+   READ MORE LINK STYLES
+   ======================================== */
+
+.read-more {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #28a745;
+}
+
+/* ========================================
+   MODAL STYLES
+   ======================================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #28a745;
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #218838;
+}
