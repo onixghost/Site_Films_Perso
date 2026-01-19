@@ -9,33 +9,58 @@
 <body>
     <header>
         <h1>Les films que j'ai vus</h1>
+        <a href="https://ovlim.com" class="logo-link" target="_blank">
+            <img src="Images/Capture d’écran 2026-01-19 à 04.07.38.png" alt="Logo" class="header-logo">
+        </a>
     </header>
 
     <main>
-        <!-- Film Section -->
-        <section id="film1">
+        <div class="films-container">
+            <article class="film-card">
+                <section id="film1">
             <a href="https://www.tokyvideo.com/fr/video/the-jane-doe-identity-2016" target="_blank">
                 <img src="Images/the jane doe identity (2016).jpg" alt="Affiche du film 1">
             </a>
-        </section>
+                </section>
+                <div class="container">
+                    <h3>The Autopsy of Jane Doe</h3>
+                    <p>Quand la police leur amène le corps immaculé d’une Jane Doe (expression désignant une femme dont on ignore l’identité), Tommy Tilden et son fils, médecins-légistes, pensent que l’autopsie ne sera qu’une simple formalité. Au fur et à mesure de la nuit, ils ne cessent de découvrir des choses étranges et inquiétantes à l’intérieur du corps de la défunte. Alors qu’ils commencent à assembler les pièces d’un mystérieux puzzle, une force surnaturelle fait son apparition dans le crématorium...</p>
+                    <a href="#" class="read-more" onclick="openModal('modal1')">Lire la suite</a>
+                </div>
+            </article>
 
-        <!-- Film Description Container -->
-        <div class="container">
-            <h3>The Autopsy of Jane Doe</h3>
-            <p>Quand la police leur amène le corps immaculé d'une Jane Doe (expression désignant une femme dont on ignore l'identité), Tommy Tilden et son fils, médecins-légistes, pensent que l'autopsie ne sera qu'une simple formalité. Au fur et à mesure de la nuit, ils ne cessent de découvrir des choses étranges et inquiétantes à l'intérieur du corps de la défunte. Alors qu'ils commencent à assembler les pièces d'un mystérieux puzzle, une force surnaturelle fait son apparition dans le crématorium...</p>
-            <a href="#" class="read-more" onclick="openModal(event)">Lire la suite</a>
+            <article class="film-card">
+                <section id="film2">
+                    <a href="https://www.tokyvideo.com/fr/video/the-poughkeepsie-tapes" target="_blank">
+                        <img src="Images/The Poughkeepsie Tapes.jpg" alt="Affiche du film 2">
+                    </a>
+                </section>
+                <div class="container">
+                    <h3>The Poughkeepsie Tapes</h3>
+                    <p>Des centaines de vidéos sont découvertes dans une maison abandonnée. En les visionnant, on s'aperçoit qu'il s'agit des preuves laissées par un serial killer ayant filmé tous ses crimes, du simple meurtre à la pire des séances de torture...</p>
+                    <a href="#" class="read-more" onclick="openModal('modal2')">Lire la suite</a>
+                </div>
+            </article>
         </div>
 
-        <!-- Modal -->
-        <div id="modal" class="modal">
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
             <div class="modal-content">
-                <button class="close-btn" onclick="closeModal()">✕</button>
+                <button class="close-btn" onclick="closeModal('modal1')">✕</button>
                 <h2>The Autopsy of Jane Doe</h2>
                 <p>Quand la police leur amène le corps immaculé d'une Jane Doe (expression désignant une femme dont on ignore l'identité), Tommy Tilden et son fils, médecins-légistes, pensent que l'autopsie ne sera qu'une simple formalité. Au fur et à mesure de la nuit, ils ne cessent de découvrir des choses étranges et inquiétantes à l'intérieur du corps de la défunte. Alors qu'ils commencent à assembler les pièces d'un mystérieux puzzle, une force surnaturelle fait son apparition dans le crématorium...</p>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal('modal2')">✕</button>
+                <h2>The Poughkeepsie Tapes</h2>
+                <p>Des centaines de vidéos sont découvertes dans une maison abandonnée. En les visionnant, on s'aperçoit qu'il s'agit des preuves laissées par un serial killer ayant filmé tous ses crimes, du simple meurtre à la pire des séances de torture...</p>
             </div>
         </div>
     </main>
 
     <script src="script.js"></script>
-</body>
 </html>
